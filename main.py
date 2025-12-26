@@ -52,9 +52,9 @@ plugins = dict(root="plugins")
 if __name__ == "__main__" :
     bot = Client(
         "StarkBot",
-        bot_token=os.environ.get("BOT_TOKEN"),
-        api_id=int(os.environ.get("API_ID")),
-        api_hash=os.environ.get("API_HASH"),
+        bot_token=os.environ.get("8578130308:AAEdXrHfDd3SJDr5d5ORqKWi0g3jPyAg_2E"),
+        api_id=int(os.environ.get("30744675"),
+        api_hash=os.environ.get("2b2ab5de1550aaf6e8c4bb91daf8d1cf"),
         sleep_threshold=20,
         plugins=plugins,
         workers = 50
@@ -63,8 +63,9 @@ if __name__ == "__main__" :
     async def main():
         await bot.start()
         bot_info  = await bot.get_me()
-        LOGGER.info(f"<--- @{bot_info.username} Started (c) STARKBOT --->")
+        LOGGER.info(f"<--- @{bot_info.@gkjskj_bot} Started (c) STARKBOT --->")
         await idle()
     
     asyncio.get_event_loop().run_until_complete(main())
     LOGGER.info(f"<---Bot Stopped-->")
+
